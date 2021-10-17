@@ -1,6 +1,8 @@
 .gradle
 /build/
 
+.idea/
+
 # Ignore Gradle GUI config
 gradle-app.setting
 
@@ -12,3 +14,13 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+# Ignore output directories
+out/
+
+# Ignore some run/ directories
+run/crash-reports/
+run/logs/
+run/saves/
+run/usercache.json
+run/usernamecache.json
