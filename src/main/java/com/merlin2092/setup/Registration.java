@@ -5,6 +5,7 @@ import com.merlin2092.variants.tabs.VariantTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -51,4 +52,7 @@ public class Registration {
      */
     public static final RegistryObject<Block> MOON_STONE = registerBlock("moon_stone", () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
     public static final RegistryObject<StairBlock> MOON_STONE_STAIRS = registerBlock("moon_stone_stairs", () -> new StairBlock(MOON_STONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(MOON_STONE.get())));
+
+    public static final RegistryObject<StairBlock> RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
+            () -> new StairBlock(Blocks.RED_CONCRETE.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
 }
