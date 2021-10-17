@@ -22,5 +22,6 @@ out/
 run/crash-reports/
 run/logs/
 run/saves/
+run/screenshots/
 run/usercache.json
 run/usernamecache.json
