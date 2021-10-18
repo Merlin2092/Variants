@@ -30,7 +30,9 @@ public class GenItems extends ItemModelProvider {
          * BLOCK ITEMS
          */
         withExistingParent("moon_stone", modLoc("block/moon_stone"));
+        withExistingParent("white_stone", modLoc("block/white_stone"));
         withExistingParent("moon_stone_stairs", modLoc("block/moon_stone_stairs"));
+        withExistingParent("white_stone_stairs", modLoc("block/white_stone_stairs"));
         withExistingParent("red_concrete_stairs", modLoc("block/red_concrete_stairs"));
     }
 }

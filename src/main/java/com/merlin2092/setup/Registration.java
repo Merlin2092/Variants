@@ -54,8 +54,14 @@ public class Registration {
     public static final RegistryObject<Block> MOON_STONE = registerBlock("moon_stone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)));
 
+    public static final RegistryObject<Block> WHITE_STONE = registerBlock("white_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.HEAVY_METAL)));
+
     public static final RegistryObject<StairBlock> MOON_STONE_STAIRS = registerBlock("moon_stone_stairs",
             () -> new StairBlock(() -> MOON_STONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(MOON_STONE.get())));
+
+    public static final RegistryObject<StairBlock> WHITE_STONE_STAIRS = registerBlock("white_stone_stairs",
+            () -> new StairBlock(() -> WHITE_STONE.get().defaultBlockState(), BlockBehaviour.Properties.copy(WHITE_STONE.get())));
 
     public static final RegistryObject<StairBlock> RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
             () -> new StairBlock(Blocks.RED_CONCRETE::defaultBlockState, BlockBehaviour.Properties.copy(Blocks.RED_CONCRETE)));
