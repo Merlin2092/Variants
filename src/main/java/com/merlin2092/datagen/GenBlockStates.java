@@ -1,7 +1,6 @@
 package com.merlin2092.datagen;
 
 import com.merlin2092.setup.Registration;
-import com.merlin2092.variants.Variants;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -20,8 +19,12 @@ public class GenBlockStates extends BlockStateProvider {
 
         simpleBlock(Registration.MOON_STONE.get());
         simpleBlock(Registration.WHITE_STONE.get());
-        stairsBlock(Registration.MOON_STONE_STAIRS.get(), new ResourceLocation(MOD_ID, "block/moon_stone"));
-        stairsBlock(Registration.WHITE_STONE_STAIRS.get(), new ResourceLocation(MOD_ID, "block/white_stone"));
-        stairsBlock(Registration.RED_CONCRETE_STAIRS.get(), new ResourceLocation("minecraft", "block/red_concrete"));
+
+        // GENERATED_TEXT_HERE
+
+        stairsBlock(GenStairBlocks.MOON_STONE_STAIRS.get(), new ResourceLocation(MOD_ID, "block/moon_stone"));
+        stairsBlock(GenStairBlocks.WHITE_STONE_STAIRS.get(), new ResourceLocation(MOD_ID, "block/white_stone"));
+
+    // GENERATED_TEXT_HERE
     }
 }
